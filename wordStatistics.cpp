@@ -10,7 +10,7 @@
 void wordTree::traverse(Trie *p) {
 	if(p == NULL) return;
 	if(p->isEnd)
-		printf("%s(%d/%d)\n", tmp.c_str(), p->times, count);
+		printf("%s,%d\n", tmp.c_str(), p->times);
 
 	for (int i = 0; i < charaN; ++i) {
 		if(p->next[i]) {

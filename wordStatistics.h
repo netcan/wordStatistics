@@ -49,6 +49,7 @@ struct wordTree {
 		int find(const string &str) const; // 查找单词，返回次数
 		void traverse() { // 遍历输出信息
 			tmp = "";
+			printf("word,times\n");
 			traverse(root);
 		}
 		~wordTree() {
